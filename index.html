@@ -10,6 +10,7 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <script src="./assets/js/script.js" defer></script>
     <title>ElectraPoint</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -181,14 +182,16 @@
 </svg>
 
   </div>
-  <nav class="navbar">
+  <nav class="navbar" >
     <div class="max-width">
-        <div class="logo"><a href="#">EV<span>Map</span></a></div>
+        <div class="logo"><a href="#">EV<span id="suraklal">Map</span></a></div>
         <ul class="menu">
-            <li><a href="#home" class="menu-btn">Home</a></li>
-            <li><a href="./assets/HTML/map.html" class="menu-btn" target = "_blank">Find Service Station</a></li>
-            <li><a href="#" class="menu-btn">Graphical Stats</a></li>
-            <li><a href="#contact" class="menu-btn">About</a></li>
+            <li><a href="#home" class="menu-btn lia">Home</a></li>
+            <li><a href="./assets/HTML/map.html" class="menu-btn lia" target = "_blank">Find Service Station</a></li>
+            <li><a href="assets/graph/index.html" target="_blank" class="menu-btn lia">Graphical Stats</a></li>
+            <li><a href="https://www.tesla.com/" target = "_blank" class="menu-btn lia">Get EV</a></li>
+
+            <li><a href="#contact" class="menu-btn lia">About</a></li>
           </ul>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -196,9 +199,11 @@
     </div>
 </nav>
 <!-- Hero section -->
+<section id="uppersection" class="img1">
+</section>
     <div class="relative bg-drkgray overflow-hidden">
         <div class="max-w-7xl mx-auto">
-          <div class="relative z-10 pb-8 bg-drkgray sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+          <div id="mainsection" class="relative z-10 pb-8 bg-drkgray sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
               <polygon class="bg-gray" points="50,0 100,0 50,100 0,100" />
             </svg>
@@ -242,8 +247,7 @@
                   <span class="block log xl:inline logo">Juice?</span>
                 </h1>
                 <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  If your Electric Vechile needs to fuel up and recover from those long trips, the various grocery visits
-                  , or you simply want to mingle with eco-friendly mates, head on over to our Charging Station Locator.
+                  The availability of fossil fuels is limited, and their use is destroying our planet. Toxic emissions from petrol and diesel vehicles lead to long-term, adverse effects on public health. To reduce the impact of charging electric vehicles, India is ambitious to achieve about 40 percent cumulative electric power installed capacity from non-fossil fuel-based energy resources by the year 2030. Therefore, electric vehicles are the way forward for Indian transport, and we must switch to them now
                 </p>
                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div class="rounded-md shadow">
@@ -252,7 +256,7 @@
                     </a>
                   </div>
                   <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gray-300 hover:bg-white md:py-4 md:text-lg md:px-10">
+                    <a href="assets/graph/index.html" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black bg-gray-300 hover:bg-white md:py-4 md:text-lg md:px-10">
                       Graphical Stats for nerds!
                     </a>
                   </div>
@@ -262,11 +266,15 @@
           </div>
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <video class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" poster=".//assets/images/frame1.PNG" autoplay muted loop playsinline>
-            <source src="assets/images/charge.mp4" type="">
-        </video>
+          <div id="cybertruck"></div>
         </div>
       </div>
+      <!-- section for the graphical data -->
+      <section class="graphical-data">
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <canvas id="myChart1" style="width:100%;max-width:600px"></canvas>
+        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+      </section>
       <!-- contact section start -->
     <section class="contact" id="contact">
       <div class="max-width">
@@ -339,13 +347,7 @@
           </div>
       </div>
       <div class="hidden">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+      </div>
   </section>
 </body>
 </html>
