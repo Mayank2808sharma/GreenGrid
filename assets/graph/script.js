@@ -21,10 +21,6 @@ function drawChart() {
   ]);
 
   var options = {
-    chart: {
-      title: "Column Chart",
-      subtitle: "Average Demand and Electricity Availability",
-    },
     bars: "vertical",
     vAxis: { format: "decimal" },
     height: 400,
@@ -58,7 +54,6 @@ function drawChart1() {
   ]);
 
   var options1 = {
-    title: "Average Demand and Electricity Availability",
     curveType: "function",
     legend: { position: "bottom" },
     backgroundColor: "#f3f0f0",
@@ -93,7 +88,6 @@ function drawChart2() {
   ]);
 
   var options2 = {
-    title: "Average demand",
     pieHole: 0.3,
     backgroundColor: "#f3f0f0",
   };
@@ -126,7 +120,6 @@ function drawChart3() {
   ]);
 
   var options3 = {
-    title: "Electrical Availability",
     pieHole: 0.3,
     backgroundColor: "#f3f0f0",
   };

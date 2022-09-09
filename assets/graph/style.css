@@ -147,3 +147,34 @@ footer {
 body {
   background-color: #f3f0f0;
 }
+#recttext {
+  position: absolute;
+  font-size: 2vw;
+  font-style: sans-serif;
+  margin-top: 3vh;
+  margin-left: 1.9vw;
+}
+#smoottext {
+  position: absolute;
+  font-size: 2vw;
+  font-style: sans-serif;
+  top: 80vh;
+  left: 2vw;
+  z-index: 100;
+}
+#demandtext {
+  position: absolute;
+  font-size: 2vw;
+  font-style: sans-serif;
+  top: 155vh;
+  left: 2vw;
+  z-index: 100;
+}
+#Avaltext {
+  position: absolute;
+  font-size: 2vw;
+  font-style: sans-serif;
+  top: 155vh;
+  left: 56.5vw;
+  z-index: 100;
+}
