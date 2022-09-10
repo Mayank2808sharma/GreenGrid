@@ -663,8 +663,9 @@ body {
   margin-top: -7vh;
 }
 #map-app {
-  height: 100px;
-  width: 100px;
+  height: 100vh;
+  width: 100%;
+  /* background-color: black; */
 }
 @media (max-width: 500px) {
   #map-container {
