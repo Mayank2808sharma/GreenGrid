@@ -76,7 +76,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: #dc143c;
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -818,20 +818,28 @@ path {
 /* graphical data set */
 .graphical-data {
   height: 700px;
-  width: 100%;
-  background-color: white;
+  width: 100vw;
+  background-color: #0000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* #myChart1 {
-} */
-#mychart2 {
-  justify-self: flex-end;
-  align-self: flex-end;
+#seemoregraph {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 290vh;
+  left: 75vw;
+  z-index: 120;
+  color: #fff;
+  font-size: 1.5vw;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
 }
-/* #mychart {
-} */
+#seemoregraph:hover {
+  color: #6ce5e8;
+  font-size: 1.7vw;
+}
 body {
   width: 100vw;
   height: 100vh;
