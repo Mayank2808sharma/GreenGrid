@@ -1,9 +1,4 @@
-<p align="center">
-  
-![Green Grid]
-
-</p>
-<h3 align="center">Green grid</h3>
+<h3 align="center" font-size="3vw">Green grid</h3>
 
 ## 📊 Green Grid  🕹[Try It Now](https://zingy-cannoli-c5e789.netlify.app)
 -> Smart Grid is a network that combines energy distribution with data-based analysis in a 2-way flow of electricity and data.
