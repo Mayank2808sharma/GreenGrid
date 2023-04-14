@@ -1,0 +1,181 @@
+#chart_div {
+    position: absolute;
+    z-index: 20;
+    margin-top: 12vh;
+    margin-left: 5vw;
+    /* width: 10vw; */
+  }
+  #curve_chart {
+    position: absolute;
+    z-index: 20;
+    top: 80vh;
+    margin-left: -3.6vw;
+    width: 10vw;
+  }
+  #donutchart1 {
+    position: absolute;
+    z-index: 20;
+    top: 150vh;
+    margin-left: -10.6vw;
+  }
+  #dontu {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #donutchart2 {
+    position: absolute;
+    z-index: 20;
+    top: 150vh;
+    left: 67vw;
+    margin-left: -23vw;
+  }
+  /* nav bar */
+  /*  import google fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* all similar content styling codes */
+  section {
+    padding: 100px 0;
+  }
+  .max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+  }
+  footer {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* navbar styling */
+  .navbar {
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: "Ubuntu", sans-serif;
+    transition: all 0.3s ease;
+    margin-top: -2vh;
+    height: 13vh;
+    background-color: #212020;
+  }
+  .navbar.sticky {
+    padding: 15px 0;
+    background: rgb(19, 19, 19);
+  }
+  .navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -7vw;
+  }
+  .navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky .logo a span {
+    color: #fff;
+  }
+  .navbar .menu {
+    margin-right: -7vw;
+  }
+  .navbar .menu li {
+    list-style: none;
+    display: inline-block;
+  }
+  .navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+  }
+  .navbar .menu li a:hover {
+    color: crimson;
+  }
+  .navbar.sticky .menu li a:hover {
+    color: #fff;
+  }
+  .coloronhover {
+    color: black;
+  }
+  /* menu btn styling */
+  .menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+  }
+  /* responsive media query start */
+  @media (max-width: 947px) {
+    .navbar .menu {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      left: -100%;
+      top: 0;
+      background: #111;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+    }
+    .navbar .menu.active {
+      left: 0;
+    }
+    .navbar .menu li {
+      display: block;
+    }
+    .navbar .menu li a {
+      display: inline-block;
+      margin: 20px 0;
+      font-size: 25px;
+    }
+  }
+  body {
+    background-color: #f3f0f0;
+  }
+  #recttext {
+    position: absolute;
+    font-size: 2vw;
+    font-style: sans-serif;
+    margin-top: 3vh;
+    margin-left: 1.9vw;
+  }
+  #smoottext {
+    position: absolute;
+    font-size: 2vw;
+    font-style: sans-serif;
+    top: 80vh;
+    left: 2vw;
+    z-index: 100;
+  }
+  #demandtext {
+    position: absolute;
+    font-size: 2vw;
+    font-style: sans-serif;
+    top: 155vh;
+    left: 2vw;
+    z-index: 100;
+  }
+  #Avaltext {
+    position: absolute;
+    font-size: 2vw;
+    font-style: sans-serif;
+    top: 155vh;
+    left: 56.5vw;
+    z-index: 100;
+  }
+  
